@@ -55,4 +55,11 @@ $ docker build .
 ```
 
 this command will create our docker image according the information we provided 
-in the Dockerfile
+in the Dockerfile.
+
+now, to run our image we should run this command:
+```shell
+$ docker run -p 8080:8080 docker-spring 
+# or the name you gave to your image
+# -p means publish, we define on which port our image instance will run 
+```
