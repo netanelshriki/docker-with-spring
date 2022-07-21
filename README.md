@@ -80,3 +80,50 @@ and this is the response:
 ![This is an image](https://github.com/netanelshriki/docker-with-spring/blob/master/src/main/resources/static/curl-response-docker.png)
 
 congratulations! now you have built your first docker image :)
+
+# Publish Docker image to dockerhub:
+
+> for the next steps, i assume you have created already a dockerhub account
+
+### Step 1:
+
+first we should to log in to our dockerhub account, let's we run this command:
+
+```shell
+docker login
+```
+
+and we specify our username and password.
+
+### Step 2:
+
+we build our image tag locally, in the way we want see it in our dockerhub repository, <our username>/<our image>
+for instance - netanel123/docker-spring (in my case).
+to build this tag we run the following command: 
+
+```shell
+docker tag docker-spring netanel123/docker-spring
+# docker tag <my image>  <my username>/<my image>
+# this will generate a new image - netanel123/docker-spring, unlike just docker-spring before.
+```
+
+now we almost finished, and we have just to push our image to dockerhub:
+
+```shell
+docker push netanel123/docker-spring
+```
+
+we can also specify a specific tag as following
+
+```shell
+docker push netanel123/docker-spring:myTag
+```
+if we will not do it, our image will get by default the tag - :latest
+
+and you have done! you just pushed your docker image to dockerhub repository 
+
+[:partying_face:]
+
+[:sunny:]
+
+
