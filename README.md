@@ -1,6 +1,6 @@
-#Dockerizing spring boot App:
+# Dockerizing spring boot App:
 
-###Step 1:
+### Step 1:
 
 lets we build a simple spring server : 
 
