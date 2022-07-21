@@ -29,7 +29,7 @@ public class DockerWithSpringApplication {
 
 next, we'll build our jar using maven command:
 ```shell
-$ mvn clean install
+mvn clean install
 ```
 and we should see, under target who just created, a .jar file, which named by the artifact id and the version 
 as we configured in pom.xml file.
@@ -56,7 +56,7 @@ now let's we build our image, we should navigate to the main folder
 of our project and to run this command:
 
 ```shell
-$ docker build . 
+docker build . 
 ```
 
 this command will create our docker image according the information we provided 
@@ -65,7 +65,7 @@ in the Dockerfile.
 ### Step 5:
 now, to run our image we should run this command:
 ```shell
-$ docker run -p 8080:8080 docker-spring 
+docker run -p 8080:8080 docker-spring 
 # or the name you gave to your image
 # -p means publish, we define on which port our image instance will run 
 ```
@@ -74,7 +74,7 @@ $ docker run -p 8080:8080 docker-spring
 
 let's we test our image with curl command:
 ```shell
-$ curl http://localhost:8080/
+curl http://localhost:8080/
 ```
 and this is the response:  
 ![This is an image](https://github.com/netanelshriki/docker-with-spring/blob/master/src/main/resources/static/curl-response-docker.png)
