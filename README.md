@@ -120,10 +120,8 @@ docker push netanel123/docker-spring:myTag
 ```
 if we will not do it, our image will get by default the tag - :latest
 
-and you have done! you just pushed your docker image to dockerhub repository 
+and you have done! you just pushed your docker image to dockerhub repository :partying_face:
 
-[:partying_face:]
 
-[:sunny:]
 
 
