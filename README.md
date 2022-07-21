@@ -75,4 +75,4 @@ let's we test our image with curl command:
 $ curl http://localhost:8080/
 ```
 
-
+![This is an image](https://github.com/netanelshriki/docker-with-spring/blob/master/src/main/resources/static/curl-response-docker.png)
