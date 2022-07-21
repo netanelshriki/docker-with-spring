@@ -67,3 +67,12 @@ $ docker run -p 8080:8080 docker-spring
 # or the name you gave to your image
 # -p means publish, we define on which port our image instance will run 
 ```
+
+### Step 6:
+
+let's we test our image with curl command:
+```shell
+$ curl http://localhost:8080/
+```
+
+
