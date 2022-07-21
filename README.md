@@ -46,3 +46,13 @@ ENTRYPOINT ["java","-jar","/docker-spring-0.0.1.jar"]
 # the script we want to run when the program is booting
 # notice, the entrypoint is defined as array 
 ```
+
+now let's we build our image, we should navigate to the main folder 
+of our project and to run this command:
+
+```shell
+$ docker build . 
+```
+
+this command will create our docker image according the information we provided 
+in the Dockerfile
