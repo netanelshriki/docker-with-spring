@@ -107,6 +107,17 @@ docker tag docker-spring netanel123/docker-spring
 # docker tag <my image>  <my username>/<my image>
 # this will generate a new image - netanel123/docker-spring, unlike just docker-spring before.
 ```
+let's we check our images:
+
+```shell
+docker images
+```
+
+and indeed, image netanel123/docker-spring built in addition to docker-spring
+
+
+![This is an image](https://github.com/netanelshriki/docker-with-spring/blob/master/src/main/resources/static/docker-images.png)
+
 
 now we almost finished, and we have just to push our image to dockerhub:
 
