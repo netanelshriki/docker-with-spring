@@ -1,7 +1,6 @@
 [![CI with Maven](https://github.com/netanelshriki/docker-with-spring/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/netanelshriki/docker-with-spring/actions/workflows/main.yml)
 
 # Dockerizing spring boot App:
-
 ### Step 1:
 
 lets we build a simple spring server : 
