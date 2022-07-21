@@ -57,6 +57,7 @@ of our project and to run this command:
 
 ```shell
 docker build -t docker-spring . 
+# -t, means the tag (name) we want to give to our image
 ```
 
 this command will create our docker image according the information we provided 
@@ -97,7 +98,7 @@ and we specify our username and password.
 
 ### Step 2:
 
-we build our image tag locally, in the way we want see it in our dockerhub repository, <our username>/<our image>
+we build our image tag locally, in the way we want see it in our dockerhub repository, "our-username/our-image"
 for instance - netanel123/docker-spring (in my case).
 to build this tag we run the following command: 
 
@@ -120,7 +121,9 @@ docker push netanel123/docker-spring:myTag
 ```
 if we will not do it, our image will get by default the tag - :latest
 
-and you have done! you just pushed your docker image to dockerhub repository :partying_face:
+and you have done! you just pushed your docker image to [dockerhub repository](https://hub.docker.com/repositories/netanel123) :partying_face:
+
+
 
 
 
