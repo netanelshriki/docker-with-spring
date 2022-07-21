@@ -56,7 +56,7 @@ now let's we build our image, we should navigate to the main folder
 of our project and to run this command:
 
 ```shell
-docker build . 
+docker build -t docker-spring . 
 ```
 
 this command will create our docker image according the information we provided 
