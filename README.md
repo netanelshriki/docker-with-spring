@@ -23,6 +23,7 @@ public class DockerWithSpringApplication {
 }
 
 ```
+### Step 2:
 
 next, we'll build our jar using maven command:
 ```shell
@@ -30,9 +31,11 @@ $ mvn clean install
 ```
 and we should see, under target who just created, a .jar file, which named by the artifact id and the version 
 as we configured in pom.xml file.
+
+### Step 3:
+
 now, after we have the jar, we want the build a docker image from this jar
 and we can do it by creating a Dockerfile in the main directory as following:
-
 
 ```Dockerfile
 FROM amazoncorretto:11-alpine-jdk
@@ -46,7 +49,7 @@ ENTRYPOINT ["java","-jar","/docker-spring-0.0.1.jar"]
 # the script we want to run when the program is booting
 # notice, the entrypoint is defined as array 
 ```
-
+### Step 4:
 now let's we build our image, we should navigate to the main folder 
 of our project and to run this command:
 
@@ -57,6 +60,7 @@ $ docker build .
 this command will create our docker image according the information we provided 
 in the Dockerfile.
 
+### Step 5:
 now, to run our image we should run this command:
 ```shell
 $ docker run -p 8080:8080 docker-spring 
