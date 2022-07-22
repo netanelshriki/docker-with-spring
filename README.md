@@ -19,7 +19,7 @@ public class DockerWithSpringApplication {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello Docker World";
+        return "Hello Docker";
     }
 
 }
